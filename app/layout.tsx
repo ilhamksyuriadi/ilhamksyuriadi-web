@@ -3,6 +3,12 @@ import localFont from 'next/font/local';
 import "./globals.css";
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import NavyBlob from '@/assets/accents/blob-navy.svg'
+import YellowBlob from '@/assets/accents/blob-yellow.svg'
+import PurpleBlob from '@/assets/accents/blob-purple.svg'
+import NavyCurve from '@/assets/accents/curve-line-navy.svg'
+import YellowCurve from '@/assets/accents/curve-line-yellow.svg'
+import PurpleCurve from '@/assets/accents/curve-line-purple.svg'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,6 +41,30 @@ export default function RootLayout({
   return (
     <html lang="en" className={satoshi.variable}>
       <body>
+
+        {/* Background Accents */}
+        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+
+          {/* Navy blob - top left */}
+          <NavyBlob className="absolute top-120 -left-60 w-[600] h-[400]" />
+
+          {/* Yellow blob - mid right */}
+          <YellowBlob className="absolute top-1/3 -right-96" width={611} height={1841} />
+
+          {/* Purple blob - bottom left */}
+          <PurpleBlob className="absolute bottom-0 -left-40" width={746} height={1565} />
+
+          {/* Navy curve - top */}
+          <NavyCurve className="absolute top-0 left-0 opacity-40" width={1920} height={1387} />
+
+          {/* Yellow curve - mid */}
+          <YellowCurve className="absolute top-1/3 left-0 opacity-40" width={1920} height={2770} />
+
+          {/* Purple curve - bottom */}
+          <PurpleCurve className="absolute top-0 left-0 opacity-40" width={1920} height={674} />
+
+        </div>
+
         <Header />
         <main className="min-h-screen">
           {children}

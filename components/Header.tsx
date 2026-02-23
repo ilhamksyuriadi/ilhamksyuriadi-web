@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${isScrolled && 'backdrop-blur-md shadow-sm'}`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 bg-transparent ${isScrolled && 'backdrop-blur-md shadow-sm bg-white'}`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
