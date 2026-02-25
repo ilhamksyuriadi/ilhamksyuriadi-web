@@ -10,6 +10,9 @@ export default {
     extend: {
       colors: {
         navy: '#0F104C',
+        blue: '#0977FF',
+        red: '#F83434',
+        green: '#4DD837',
         black: '#1E1E1E',
         white: '#FFFFFF',
         gray: {
