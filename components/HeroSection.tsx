@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const roles = [
-  { text: 'Software Developer', emoji: '💻', color: 'text-navy' },
-  { text: 'Thinker', emoji: '🧠', color: 'text-red' },
-  { text: 'Dreamer', emoji: '📘', color: 'text-blue' },
-  { text: 'Explorer', emoji: '🔍', color: 'text-green' },
+  { text: 'Software Engineer', emoji: '💻', color: 'text-navy' },
+  { text: 'Problem Solver', emoji: '🎯', color: 'text-red' },
+  { text: 'ML & Data Explorer', emoji: '📊', color: 'text-blue' },
+  { text: 'Perpetual Learner', emoji: '🍀', color: 'text-green' },
 ]
 
 export default function HeroSection() {
@@ -35,11 +35,11 @@ export default function HeroSection() {
   const current = roles[currentIndex]
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 md:pt-40 pb-16">
+    <section className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
 
       {/* Greeting */}
       <p className="text-sm md:text-xl font-bold text-gray-dark mb-2">
-        Hello. I am <span className="text-black">Ilham</span>
+        Hello. I am <span className="text-black">Ilham Kurnia Syuriadi</span>
       </p>
 
       {/* Headline */}
@@ -58,9 +58,7 @@ export default function HeroSection() {
 
       {/* Description */}
       <p className="text-sm md:text-base text-gray-dark font-bold max-w-sm md:max-w-md leading-relaxed mb-6">
-        Interested in technology, especially in Software Engineering.
-        Love to solve problems & collaborate with the team to deliver
-        high-performance product.
+        Software Engineer who actively explores emerging technologies through project-based learning. Currently building expertise in ML and Data while delivering robust frontend solutions with React and Angular.
       </p>
 
       {/* Currently working badge */}
