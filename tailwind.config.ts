@@ -19,6 +19,7 @@ export default {
           light: '#DADADA',
           dark: '#878787',
         },
+        lavender: '#E0E0F6'
       },
       fontFamily: {
         satoshi: ['var(--font-satoshi)', 'sans-serif'],

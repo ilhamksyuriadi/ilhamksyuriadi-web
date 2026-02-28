@@ -53,7 +53,6 @@ export default function HeroSection() {
           <span className="italic font-bold">{current.text}</span> {current.emoji}
         </span>
         <br />
-        Based in Indonesia
       </h1>
 
       {/* Description */}
@@ -64,7 +63,7 @@ export default function HeroSection() {
       {/* Currently working badge */}
       <div className="flex items-center gap-2">
         <Image
-          src="/images/company-logo.png"
+          src="/images/csg-logo.png"
           alt="CSG International"
           width={40}
           height={40}

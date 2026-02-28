@@ -40,22 +40,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={satoshi.variable}>
-      <body>
+      <body className="relative min-h-screen">
 
         {/* Background Accents */}
-        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden min-h-full">
 
           {/* Navy blob - top left */}
-          <NavyBlob className="absolute top-120 -left-60 w-[600] h-[400]" />
+          <NavyBlob className="absolute top-20 -left-60 w-[600] h-[400]" />
 
           {/* Yellow blob - mid right */}
-          <YellowBlob className="absolute top-1/3 -right-96" width={611} height={1841} />
+          <YellowBlob className="absolute top-40 right-0" width={611} height={1841} />
 
           {/* Purple blob - bottom left */}
           <PurpleBlob className="absolute bottom-0 -left-40" width={746} height={1565} />
 
           {/* Navy curve - top */}
-          <NavyCurve className="absolute top-0 left-0 opacity-40" width={1920} height={1387} />
+          <NavyCurve className="absolute top-10 left-0 opacity-40" width={1920} height={1387} />
 
           {/* Yellow curve - mid */}
           <YellowCurve className="absolute top-1/3 left-0 opacity-40" width={1920} height={2770} />
