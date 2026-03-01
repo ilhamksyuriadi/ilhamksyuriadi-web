@@ -63,7 +63,7 @@ export default function HeroSection() {
       {/* Currently working badge */}
       <div className="flex items-center gap-2">
         <Image
-          src="/images/csg-logo.png"
+          src="/images/company/csg-logo.png"
           alt="CSG International"
           width={40}
           height={40}
